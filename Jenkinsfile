@@ -1,5 +1,4 @@
 node {
-  try {
     stage('Checkout') {
       checkout scm
     }
@@ -31,8 +30,4 @@ node {
 //        sh 'docker rmi -f react-app localhost:5000/react-app'
       }
     }
-  }
-  catch (err) {
-    throw err
-  }
 }
