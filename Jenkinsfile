@@ -4,7 +4,7 @@ node {
     }
     stage('Environment') {
       sh 'git --version'
-      echo "Branch: ${env.BRANCH_NAME}"
+      echo "Branch: master"
       //sh 'docker -v'
       //sh 'printenv'
     }
