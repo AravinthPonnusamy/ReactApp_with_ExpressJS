@@ -12,7 +12,7 @@ node {
       npm install
       cd client
       npm install
-      //cd ..
+      echo pwd
       //npm run dev
      //sh 'docker build -t react-test -f Dockerfile.test --no-cache .'
     }
