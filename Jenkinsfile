@@ -8,12 +8,11 @@ node {
       //sh 'docker -v'
       //sh 'printenv'
     }
-    stage('npm test'){
-      npm install
-      cd client
-      npm install
-      echo pwd
-      //npm run dev
+    stage('Build'){
+      sh 'npm install'
+      sh 'cd client'
+      sh 'npm install'
+      sh 'npm run dev'
      //sh 'docker build -t react-test -f Dockerfile.test --no-cache .'
     }
     stage('Docker test'){
