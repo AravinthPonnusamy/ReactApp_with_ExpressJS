@@ -30,4 +30,3 @@ node {
 //        sh 'docker rmi -f react-app localhost:5000/react-app'
       }
     }
-}
