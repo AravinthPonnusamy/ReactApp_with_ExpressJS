@@ -13,7 +13,7 @@ node {
       cd client
       npm install
       cd ..
-      npm run dev
+      //npm run dev
      //sh 'docker build -t react-test -f Dockerfile.test --no-cache .'
     }
     stage('Docker test'){
