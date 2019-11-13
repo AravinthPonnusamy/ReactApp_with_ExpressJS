@@ -9,8 +9,9 @@ node {
       //sh 'printenv'
     }
     stage('Build'){
-      sh 'npm install'
-      sh 'cd client'
+      sudo npm install
+      sudo cd client
+       
       sh 'npm install'
       sh 'npm run dev'
      //sh 'docker build -t react-test -f Dockerfile.test --no-cache .'
